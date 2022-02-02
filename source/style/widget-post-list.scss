@@ -1,7 +1,7 @@
 @import "common/variable";
 $avatarSize: 180px;
-$coverMaxHeight: 360px;
 $coverBlurEffect: 20px;
+$coverMaxHeight: 360px;
 
 .post-container {
   .post-item-card {
@@ -16,6 +16,7 @@ $coverBlurEffect: 20px;
     // cover image
     > header {
       overflow: hidden;
+      max-height: 25em;
 
       // fix composite layer border on safari browser
       z-index: 1;
@@ -48,7 +49,7 @@ $coverBlurEffect: 20px;
       }
 
       .post-cover-img {
-        max-height: $coverMaxHeight;
+        max-width: 100%;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
         will-change: transform;

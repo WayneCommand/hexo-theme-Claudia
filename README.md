@@ -31,7 +31,7 @@
 Install to Hexo blog root directory, **Not theme directory** 
 ```bash
 npm install hexo-renderer-pug 
-npm install hexo-renderer-sass
+npm install hexo-renderer-dartsass
 npm install hexo-generator-search
 
 # if you need RSS, you must be install this plugin

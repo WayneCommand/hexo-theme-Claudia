@@ -33,7 +33,7 @@
 ```bash
 #必要
 npm install hexo-renderer-pug 
-npm install hexo-renderer-sass
+npm install hexo-renderer-dartsass
 npm install hexo-generator-search
 
 #选择性安装
