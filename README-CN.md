@@ -4,10 +4,8 @@
 </p>
 
 <p align="center">
-  <img  alt="Hexo version" src="https://img.shields.io/badge/hexo%20version-%3E%3D%204.2-brightgreen">
-  <img  alt="Build blog" src="https://github.com/Haojen/Claudia-theme-blog/workflows/Build%20Claudia%20blog/badge.svg?branch=master">
-  <img  alt="GitHub issues" src="https://img.shields.io/github/issues/Haojen/hexo-theme-Claudia">
-  <img  alt="GitHub license" src="https://img.shields.io/github/license/Haojen/hexo-theme-Claudia">
+  <img  alt="Hexo version" src="https://img.shields.io/badge/hexo%20version-%3E%3D%206-brightgreen">
+  <img  alt="GitHub license" src="https://img.shields.io/badge/LICENSE-MIT-blue">
 </p>
 
 
@@ -23,7 +21,7 @@
 ![cover](./screenshot/claudia-cover-v2.png)
 
 ## 更新日志
-[最近更新 04.12.2021](CHANGELOG.md)
+[最近更新 02.03.2022](CHANGELOG.md)
 
 
 ## 使用
@@ -35,7 +33,6 @@
 npm install hexo-renderer-pug 
 npm install hexo-renderer-dartsass
 npm install hexo-generator-search
-
 #选择性安装
 # 如果需要添加订阅功能
 npm install hexo-generator-feed
@@ -51,7 +48,7 @@ npm install hexo-renderer-mathjax --save
 
 ## 用户信息配置
 
-注意: 必须在主题的 `_config.yml` 中配置以下信息, 而非博客根目录下的 `_config.yml`
+在主题的根目录下 `_config.hexo-theme-Claudia.yml` 中配置以下信息。
 
 ``` yaml
 user:
@@ -60,7 +57,6 @@ user:
   location:
   description:
   footnotes:
-
 # config you SNS
 social:
   zhihu:
@@ -68,8 +64,7 @@ social:
   facebook:
   linkedin:
   instagram:
-  github: haojen
-
+  github: 
 ```
 
 ### 配置导航栏右上角菜单项
@@ -125,7 +120,7 @@ appearance: auto
 
 ## 配置代码高亮
 
-在theme主题目录下, 可以通过 `_config.yml` 文件(注意不是hexo根目录), 配置代码高亮的style, 步骤如下:
+在theme主题目录下, 可以通过 `_config.yml` 文件, 配置代码高亮的style, 步骤如下:
 首先在您的hexo根目录下 `_config.yml` , 关闭内置的着色器:
 ```yaml
 highlight:
@@ -137,12 +132,11 @@ highlight:
 ```yaml
 #Baidu Analytics**
 ba_track_id: 
-
 #Google Analytics
 ga_track_id: 
 ga_domain:
 ```
-	
+
 ## 创建 About 页面
 在博客根目录下的 `source` 文件夹里创建一个 `about` 文件夹, 然后打开该文件夹, 新建一个 `index.md`, 打开, 将下面这段文本复制到 `index.md` 里保存
 
@@ -153,18 +147,7 @@ date: 2017-05-31 10:05:56
 layout: about
 ---
 ```
-	
+
 ## 范例项目展示
 
-https://github.com/Haojen/Claudia-theme-blog  
-
-## 最后
-
-如果遇到任何问题或反馈建议，请发起 issue
-
-## 我的另外一款 Hexo 主题
-[Hexo-theme-Anisina](https://github.com/Haojen/hexo-theme-Anisina)
-
-## License
-
-MIT © [haojen ma](http://haojen.github.io)
+https://github.com/Haojen/Claudia-theme-blog

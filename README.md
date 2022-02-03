@@ -4,10 +4,8 @@
 </p>
 
 <p align="center">
-  <img  alt="Hexo version" src="https://img.shields.io/badge/hexo%20version-%3E%3D%204.2-brightgreen">
-  <img  alt="Build blog" src="https://github.com/Haojen/Claudia-theme-blog/workflows/Build%20Claudia%20blog/badge.svg?branch=master">
-  <img  alt="GitHub issues" src="https://img.shields.io/github/issues/Haojen/hexo-theme-Claudia">
-  <img  alt="GitHub license" src="https://img.shields.io/github/license/Haojen/hexo-theme-Claudia">
+  <img  alt="Hexo version" src="https://img.shields.io/badge/hexo%20version-%3E%3D%206-brightgreen">
+  <img  alt="GitHub license" src="https://img.shields.io/badge/LICENSE-MIT-blue">
 </p>
 
 <p align="center">
@@ -22,13 +20,13 @@
 ![cover](./screenshot/claudia-cover-v2.png)
 
 ## Changelog
-[Recent update 04.12.2021](CHANGELOG.md)
+[Recent update 02.03.2022](CHANGELOG.md)
 
 ## How to Use
 
 ### Install depend
 
-Install to Hexo blog root directory, **Not theme directory** 
+Install to Hexo blog root directory, **Not theme directory**
 ```bash
 npm install hexo-renderer-pug 
 npm install hexo-renderer-dartsass
@@ -40,7 +38,7 @@ npm install hexo-generator-feed
 
 ### User's profile
 
-Configure the file `hexo-theme-claudia/_config.yml` under the theme profile
+Configure the file `_config.hexo-theme-Claudia.yml` under the blog root directory
 
 ```yaml
 user:
@@ -57,7 +55,7 @@ social:
   facebook:
   linkedin:
   instagram:
-  github: haojen
+  github: 
 
 ```
 
@@ -113,7 +111,7 @@ appearance: auto
 
 ### Code highlighting
 
-1. **Disable** the default hexo highlight configuration(modify your `root/_config.yml` in root directory of hexo)
+1. **Disable** the default hexo highlight configuration.
 
 ```yaml
 highlight:
@@ -147,8 +145,3 @@ layout: about
 ### My demo blog config
 https://github.com/Haojen/Claudia-theme-blog
 
-## Another my Hexo theme
-This it [Hexo-theme-Anisina](https://github.com/Haojen/hexo-theme-Anisina), hope you like it!
-
-## License
-MIT © [haojen ma](http://haojen.github.io)

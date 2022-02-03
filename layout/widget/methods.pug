@@ -2,11 +2,16 @@
     function getPostCoverImg(post) {
         const $coverImgElRegx = /<img.*?alt="\$cover".*?>/
         const firstImgElRegx = /<img[^>]+src="?([^"\s]+)".*?>/
-        const coverImgElement = post.content.match(firstImgElRegx)
+
+        const coverImgElement = post.cover || post.content.match(firstImgElRegx)
 
         if (!coverImgElement) return false
 
         // post.content = post.content.replace(firstImgElRegx, `<img id="__hexo_theme_cover__" src="${coverImgElement[1]}" alt=".." style="display: none;">`)
+
+        // 如果是在线的图片直接返回啊
+        if (coverImgElement.startsWith("http"))
+            return coverImgElement
 
         return coverImgElement[1]
         // const coverImg = coverImgElement[0]

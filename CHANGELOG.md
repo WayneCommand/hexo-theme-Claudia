@@ -1,5 +1,11 @@
 # Changelog
 
+## 02.03.2022
+- Add post custom image (cover field)
+
+## 02.02.2022
+- Update theme style.
+
 ## 04.12.2021
 - Add Postcard image hover zoom animate effect
 - Adjust page indicator top margin
