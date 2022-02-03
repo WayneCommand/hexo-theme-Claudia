@@ -129,19 +129,43 @@ ga_track_id:
 ga_domain:
 ```
 
+## Pages
+
+### Create Post
+
+scaffolds:
+
+```yaml
+---
+title: {{ title }}
+date: {{ date }}
+tags:
+categories:
+cover: https://cover.png # if not, use the first image of the post.
+---
+```
+
+
+
 ### Create About Page
 
 Create a new folder `about` under the source of hexo, and then, create a `index.md` file and copy the following content into it.
-also you `about.png` put in `about/` folder
 
 ```yaml
 ---
 title: about
-date: 2017-05-31 10:05:56
+date: 2018-11-09 14:50:00
+updated: 2022-02-03 13:05:00
 layout: about
+cover: 'https://cover.jpg'
 ---
 ```
 
+
+
 ### My demo blog config
+
+> this is original theme Demo
+
 https://github.com/Haojen/Claudia-theme-blog
 

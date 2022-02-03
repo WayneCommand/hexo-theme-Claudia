@@ -18,19 +18,19 @@ social:
   facebook: /
   linkedin:
   instagram: /
-  github: haojen
+  github:
 
 user:
-  name: Haojen
+  name:
   avatar: /images/avatar.jpg
-  location: In the dust
-  description: May the Force be with you
+  location: this plant
+  description: time is passing.
   footnotes: # footnotes
 
 # documents: https://github.com/utterance/utterances
 # API config: https://utteranc.es/
 comment_utteranc:
-  enable: true
+  enable: false
   repo: Haojen/Claudia-theme-blog # your blog repo
 
 
@@ -51,7 +51,7 @@ comment_disqus:
 appearance: auto # Default value is auto
 
 # Miscellaneous
-favicon: /images/favicon.png
+favicon: /favicon.png
 
 # Google Analytics
 ga_track_id:
@@ -61,4 +61,4 @@ ga_domain:
 ba_track_id:
 
 # picture of about page
-about_pic: about.png
+about_pic: /images/about.png

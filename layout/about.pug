@@ -8,10 +8,15 @@ block content
         .container.is-max-widescreen.px-2
             .columns.is-marginless
                 aside.column.is-4.is-flex.is-flex-direction-column.is-justify-content-center
-                    img.js-img-fadeIn(src= theme.about_pic)
+                    img.js-img-fadeIn(src= page.cover)
                 section.column.is-8.is-flex.is-flex-direction-column.is-justify-content-center
                     h2.about-title= __('about')
                     article!= page.content
+            .columns.is-marginless
+                section.column.is-12.is-flex.is-flex-direction-column.is-justify-content-center
+                    p.has-text-right!= `${__('created_by')}: ${full_date(page.date)}`
+                    p.has-text-right!= `${__('last_revised_by')}: ${full_date(page.updated)}`
+
 block append script
     script.
         $claudia.fadeInImage()

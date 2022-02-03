@@ -2,6 +2,8 @@
 
 ## 02.03.2022
 - Add post custom image (cover field)
+- Fix disqus counter bug.
+- Update About Page.
 
 ## 02.02.2022
 - Update theme style.

@@ -137,17 +137,37 @@ ga_track_id:
 ga_domain:
 ```
 
+## 页面
+
+### 创建 Post
+
+scaffolds:
+
+```yaml
+---
+title: {{ title }}
+date: {{ date }}
+tags:
+categories:
+cover: https://cover.png # 如果没有 就用这个post的第一张图。
+---
+```
+
 ## 创建 About 页面
 在博客根目录下的 `source` 文件夹里创建一个 `about` 文件夹, 然后打开该文件夹, 新建一个 `index.md`, 打开, 将下面这段文本复制到 `index.md` 里保存
 
 ```yaml
 ---
 title: about
-date: 2017-05-31 10:05:56
+date: 2018-11-09 14:50:00
+updated: 2022-02-03 13:05:00
 layout: about
+cover: 'https://cover.jpg'
 ---
 ```
 
 ## 范例项目展示
+
+> 这是原版Demo
 
 https://github.com/Haojen/Claudia-theme-blog
