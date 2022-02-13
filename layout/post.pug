@@ -23,9 +23,10 @@ block content
                         each tag in page.tags.toArray()
                             a(href= url_for(`/tags/${tag.name}`))
                                 i.tag.post-item-tag= tag.name
-                h1.mt-0.mb-1#postTitle= page.title
-                if page.date
-                    time.has-text-grey(datetime=page.date.toJSON())= date(page.date, date_format)
+                h1.mt-0.mb-1.has-text-centered#postTitle= page.title
+                div.column.is-12.has-text-right
+                    if page.date
+                        time.has-text-grey(datetime=page.date.toJSON())= date(page.date, date_format)
                 article.mt-2.post-content!= page.content
                 section.jump-container.is-flex.is-justify-content-space-between.my-6
                     // em is empty placeholder
@@ -41,6 +42,14 @@ block content
                         a.button.is-default(href= url_for(page.next.path) title= page.next.title)
                             span.has-text-weight-semibold= nextContent
                             i.iconfont.icon-next.ml-2.has-text-grey
+                section.is-flex.my-6
+                    div.has-text-grey.is-full-width.has-text-centered.content.is-small
+                        span(style='margin: 0 .4rem') License:
+                        a(href=config.url)=config.author
+                        span(style='margin: 0 .2rem') @
+                        a(href=page.permalink)=page.title
+                        span(style='margin: 0 .2rem') /
+                        a(href='http://creativecommons.org/licenses/by-sa/4.0/') CC 4.0 International License
                 if theme.comment_utteranc && theme.comment_utteranc.enable
                     article.mt-6.comment-container
                         script(
