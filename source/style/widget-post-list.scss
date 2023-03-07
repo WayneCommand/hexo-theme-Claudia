@@ -129,11 +129,11 @@ $coverMaxHeight: 360px;
       border: 7px solid var(--avatar-border-color);
     }
 
-    .avatar-placeholder:after {
-      content: "\e62a";
+    .avatar-placeholder:before {
+      content: "\f4ff";
       font-size: 80px;
-      font-family: iconfont;
-
+      font-family: "Font Awesome 6 free";
+      // 怎么修复呢？
       position: absolute;
       top: 50%;
       left: 50%;

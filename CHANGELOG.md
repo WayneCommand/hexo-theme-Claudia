@@ -1,5 +1,11 @@
 # Changelog
 
+## 03.07.2023
+
+- Update the post center title Text.
+- Replace alibaba iconfont to fontawesome.
+
+
 ## 02.03.2022
 - Add post custom image (cover field)
 - Fix disqus counter bug.

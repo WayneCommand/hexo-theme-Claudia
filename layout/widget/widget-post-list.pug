@@ -35,8 +35,8 @@ article.post-container.is-flex.is-justify-content-center.section.container.is-ma
                         // turnPage
                         var paginatorResult = paginator({
                             escape: false,
-                            prev_text: `<i class="iconfont icon-prev has-text-grey"></i>`,
-                            next_text: `<i class="iconfont icon-next has-text-grey"></i>`,
+                            prev_text: `<i class="fa-solid fa-caret-left has-text-grey"></i>`,
+                            next_text: `<i class="fa-solid fa-caret-right has-text-grey"></i>`,
                         })
                         var pageNumber = strip_html(paginatorResult)
                         var showPageIndicator = pageNumber - 0 !== 1
