@@ -50,11 +50,11 @@ block content
                         a(href=page.permalink)=page.title
                         span(style='margin: 0 .2rem') /
                         a(href='http://creativecommons.org/licenses/by-sa/4.0/') CC 4.0 International License
-                if theme.comment_email && comment_email.enable
+                if theme.comment_email && theme.comment_email.enable
                     section.is-flex.my-2
                         div.has-text-grey.is-full-width.has-text-centered.content.is-small
                             span(style='margin: 0 .4rem') 本站公共留言板已关闭, 如果您对本文非常感兴趣，非常欢迎将您的想法投递至 
-                            a(href=`mailto: ${comment_email.email}`)=comment_email.email
+                            a(href=`mailto: ${theme.comment_email.email}`)=theme.comment_email.email
                             span(style='margin: 0 .2rem') , 非常感谢。
                             
                 if theme.comment_utteranc && theme.comment_utteranc.enable
