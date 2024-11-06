@@ -4,9 +4,8 @@
 </p>
 
 <p align="center">
-  <img  alt="Hexo version" src="https://img.shields.io/badge/hexo%20version-%3E%3D%204.2-brightgreen">
-  <img  alt="GitHub issues" src="https://img.shields.io/github/issues/Haojen/hexo-theme-Claudia">
-  <img  alt="GitHub license" src="https://img.shields.io/github/license/Haojen/hexo-theme-Claudia">
+  <img  alt="Hexo version" src="https://img.shields.io/badge/hexo%20version-%3E%3D%206-brightgreen">
+  <img  alt="GitHub license" src="https://img.shields.io/badge/LICENSE-MIT-blue">
 </p>
 
 
@@ -32,7 +31,7 @@
 ```bash
 #必要
 npm install hexo-renderer-pug 
-npm install hexo-renderer-sass
+npm install hexo-renderer-dartsass
 npm install hexo-generator-search
 
 #选择性安装
@@ -50,7 +49,7 @@ npm install hexo-renderer-mathjax --save
 
 ## 用户信息配置
 
-注意: 必须在主题的 `_config.yml` 中配置以下信息, 而非博客根目录下的 `_config.yml`
+在主题的根目录下 `_config.hexo-theme-Claudia.yml` 中配置以下信息。
 
 ``` yaml
 user:
@@ -147,34 +146,44 @@ ba_track_id:
 ga_track_id: 
 ga_domain:
 ```
-	
+
+## 页面
+
+### 创建 Post
+
+scaffolds:
+
+```yaml
+---
+title: {{ title }}
+date: {{ date }}
+tags:
+categories:
+cover: https://cover.png # 如果没有 就用这个post的第一张图。
+---
+```
+
 ## 创建 About 页面
 在博客根目录下的 `source` 文件夹里创建一个 `about` 文件夹, 然后打开该文件夹, 新建一个 `index.md`, 打开, 将下面这段文本复制到 `index.md` 里保存
 
 ```yaml
 ---
 title: about
-date: 2017-05-31 10:05:56
+date: 2018-11-09 14:50:00
+updated: 2022-02-03 13:05:00
 layout: about
+cover: 'https://cover.jpg'
 ---
 ```
-	
+
 ## 范例项目展示
 
 https://github.com/Haojen/Claudia-theme-blog  
 
-## 最后
+> 这是原版Demo
 
-如果遇到任何问题或反馈建议，请发起 issue
-
-## 支持我做的更好, 请我喝杯饮料 🥤️
-<img src="./screenshot/BuyMeCoffeeQRCode.png" width="300">
-
-## 其他我开发的项目
-- [Hexo-theme-Anisina](https://github.com/Haojen/hexo-theme-Anisina)
-- [Vimkey - 一个浏览器插件，让你用键盘控制浏览器](https://github.com/Haojen/vimkey)
-- [PlanetTab - 一个非常酷的3D动态星球浏览器新标签页](https://github.com/Haojen/planet-tab)
+https://github.com/Haojen/Claudia-theme-blog
 
 ## License
 
-MIT © [HAOZHEN MA](http://haojen.github.io)
+MIT © [haojen ma](http://haojen.github.io)

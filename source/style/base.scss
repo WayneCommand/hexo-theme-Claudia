@@ -1,4 +1,5 @@
-@import url("//at.alicdn.com/t/font_2266068_otkvzqnxk0g.css");
+@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+
 
 @import "common/variable";
 @import "themes/theme";
@@ -13,7 +14,7 @@
     a {
       color: inherit;
 
-      &:hover, &:hover .iconfont {
+      &:hover, &:hover .fa-solid {
         text-decoration: none;
         color: $activeColor!important;
       }
@@ -23,12 +24,12 @@
       margin-right: 5px;
 
       font-weight: bold;
-      color: darkorange;
+      color: #688fc6;
       font-style: normal;
 
       border-radius: 10px;
       background: transparent;
-      border: 2px solid darkorange;
+      border: 2px solid #688fc6;
     }
 
     .button.is-default {
@@ -50,7 +51,7 @@
       padding: 20px 0;
       border-top: 1px solid rgba(0, 0, 0, 0.05);
 
-      .sns-container .iconfont {
+      .sns-container .fa-brands, .fa-solid {
         margin: 0 5px;
         font-size: 30px;
       }

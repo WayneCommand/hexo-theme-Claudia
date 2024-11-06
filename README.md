@@ -168,7 +168,6 @@ title: about
 date: 2018-11-09 14:50:00
 updated: 2022-02-03 13:05:00
 layout: about
-cover: 'https://cover.jpg'
 ---
 ```
 ### My demo blog config
