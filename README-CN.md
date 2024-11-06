@@ -66,7 +66,7 @@ social:
   facebook:
   linkedin:
   instagram:
-  github: haojen
+  github: 
 
 # 页面 icon
 favicon: images/favicon.ico
@@ -81,10 +81,10 @@ friend_links:
 
 ```yaml
  # main menu navigation
- menu:
-   Home: /
-   About: /about
-   Archives: /archives
+menu:
+    Home: /
+    About: /about
+    Archives: /archives
 ```
 
 ### 边栏部件配置
