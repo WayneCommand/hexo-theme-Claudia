@@ -20,7 +20,7 @@
 ![cover](./screenshot/claudia-cover-v2.png)
 
 ## Changelog
-[Recent update 02.03.2022](CHANGELOG.md)
+[Recent update 11.06.2022](CHANGELOG.md)
 
 ## How to Use
 
@@ -34,6 +34,11 @@ npm install hexo-generator-search
 
 # if you need RSS, you must be install this plugin
 npm install hexo-generator-feed
+
+# Flowchat
+npm install hexo-filter-flowchart        
+# Math
+npm install hexo-renderer-mathjax
 ```
 
 ### User's profile
@@ -56,6 +61,13 @@ social:
   linkedin:
   instagram:
   github: 
+
+# Page icon
+favicon: images/favicon.ico
+
+friend_links:
+  - title: Link1
+    link: https://www.link1.test.com/
 
 ```
 
@@ -88,7 +100,7 @@ Project repo: https://github.com/utterance/utterances
 ```yaml
 comment_utteranc:
   enable: true
-  repo: Haojen/myBlogRepo # Change to your blog repo
+  repo: utterance/utterances # Change to your blog repo
 ```
 
 #### 2. Valine
@@ -111,7 +123,7 @@ appearance: auto
 
 ### Code highlighting
 
-1. **Disable** the default hexo highlight configuration.
+1. **Disable** the default hexo highlight configuration(modify your `_config.yml` in root directory of hexo), and then run `hexo clean` to delete cache
 
 ```yaml
 highlight:
@@ -146,7 +158,6 @@ cover: https://cover.png # if not, use the first image of the post.
 ```
 
 
-
 ### Create About Page
 
 Create a new folder `about` under the source of hexo, and then, create a `index.md` file and copy the following content into it.
@@ -157,15 +168,13 @@ title: about
 date: 2018-11-09 14:50:00
 updated: 2022-02-03 13:05:00
 layout: about
-cover: 'https://cover.jpg'
 ---
 ```
-
-
-
 ### My demo blog config
 
 > this is original theme Demo
 
 https://github.com/Haojen/Claudia-theme-blog
 
+## License
+MIT © [HAOZHEN MA](http://haojen.github.io)

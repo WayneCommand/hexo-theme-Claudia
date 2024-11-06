@@ -21,7 +21,7 @@
 ![cover](./screenshot/claudia-cover-v2.png)
 
 ## 更新日志
-[最近更新 02.03.2022](CHANGELOG.md)
+[最近更新 11.06.2022](CHANGELOG.md)
 
 
 ## 使用
@@ -33,6 +33,7 @@
 npm install hexo-renderer-pug 
 npm install hexo-renderer-dartsass
 npm install hexo-generator-search
+
 #选择性安装
 # 如果需要添加订阅功能
 npm install hexo-generator-feed
@@ -57,6 +58,7 @@ user:
   location:
   description:
   footnotes:
+
 # config you SNS
 social:
   zhihu:
@@ -65,16 +67,24 @@ social:
   linkedin:
   instagram:
   github: 
+
+# 页面 icon
+favicon: images/favicon.ico
+
+# 友情链接
+friend_links:
+  - title: Link1
+    link: https://www.link1.test.com/
 ```
 
 ### 配置导航栏右上角菜单项
 
 ```yaml
  # main menu navigation
- menu:
-   Home: /
-   About: /about
-   Archives: /archives
+menu:
+    Home: /
+    About: /about
+    Archives: /archives
 ```
 
 ### 边栏部件配置
@@ -96,7 +106,7 @@ widgets:
 ```yaml
 comment_utteranc:
   enable: true
-  repo: Haojen/myBlogRepo # change to your blog repo
+  repo: utterance/utterances # change to your blog repo
 ```
 
 #### 2. Valine
@@ -120,8 +130,7 @@ appearance: auto
 
 ## 配置代码高亮
 
-在theme主题目录下, 可以通过 `_config.yml` 文件, 配置代码高亮的style, 步骤如下:
-首先在您的hexo根目录下 `_config.yml` , 关闭内置的着色器:
+Claudia 自带代码高亮，但在正常使用前，需要您在根目录下 `_config.yml`关闭hexo自带的高亮模块，关闭后记得 `hexo clean` 清理缓存
 ```yaml
 highlight:
   enable: false
@@ -132,6 +141,7 @@ highlight:
 ```yaml
 #Baidu Analytics**
 ba_track_id: 
+
 #Google Analytics
 ga_track_id: 
 ga_domain:
@@ -168,6 +178,12 @@ cover: 'https://cover.jpg'
 
 ## 范例项目展示
 
+https://github.com/Haojen/Claudia-theme-blog  
+
 > 这是原版Demo
 
 https://github.com/Haojen/Claudia-theme-blog
+
+## License
+
+MIT © [haojen ma](http://haojen.github.io)

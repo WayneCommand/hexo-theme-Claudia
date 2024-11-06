@@ -5,6 +5,11 @@
 - Update the post center title Text.
 - Replace alibaba iconfont to fontawesome.
 
+## 11.06.2022
+- Support Fancybox (thank you @jackfromeast)
+- Add Friend Links
+- Fix more detail Bugs
+- Update Readme
 
 ## 02.03.2022
 - Add post custom image (cover field)
