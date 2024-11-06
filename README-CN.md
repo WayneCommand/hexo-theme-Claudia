@@ -107,7 +107,7 @@ widgets:
 ```yaml
 comment_utteranc:
   enable: true
-  repo: Haojen/myBlogRepo # change to your blog repo
+  repo: utterance/utterances # change to your blog repo
 ```
 
 #### 2. Valine
