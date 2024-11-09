@@ -1,19 +1,19 @@
-@import "./default-dark";
-@import "./default-light";
+@use "./default-dark";
+@use "./default-light";
 
 :root.appearance-light {
-  @include light;
+  @include default-light.light;
 }
 
 :root.appearance-dark {
-  @include dark;
+  @include default-dark.dark;
 }
 
 :root.appearance-auto {
-  @include light;
+  @include default-light.light;
 
   @media (prefers-color-scheme: dark) {
-    @include dark;
+    @include default-dark.dark;
   }
 }
 

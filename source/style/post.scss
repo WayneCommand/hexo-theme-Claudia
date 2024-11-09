@@ -1,4 +1,4 @@
-@import "common/variable";
+@use "common/variable";
 
 $lineColor: var(--border-line-color);
 
@@ -75,7 +75,7 @@ $lineColor: var(--border-line-color);
       margin: 0 auto;
       max-height: 500px;
 
-      border-radius: $borderRadius;
+      border-radius: variable.$borderRadius;
       box-shadow: 0 0 15px rgba(0, 0, 0, .05);
 
       opacity: 0;
@@ -83,7 +83,7 @@ $lineColor: var(--border-line-color);
     }
 
     a {
-      color: $activeColor;
+      color: variable.$activeColor;
     }
   }
 
@@ -125,7 +125,7 @@ $lineColor: var(--border-line-color);
 
     .is-active {
       span {
-        color: $activeColor!important;
+        color: variable.$activeColor!important;
       }
     }
   }
