@@ -1,3 +1,5 @@
+@use "themes/variable";
+
 .header-widget {
   position: fixed;
   top: 0;
@@ -9,8 +11,8 @@
   width: 100vw;
   height: 42px;
   padding: 0 15px;
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(variable.$backdropFilter);
+  -webkit-backdrop-filter: saturate(180%) blur(variable.$backdropFilter);
   background: var(--top-bar-bg-color);
 
   a {

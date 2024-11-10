@@ -13,9 +13,9 @@ block content
                     h2.about-title= __('about')
                     article!= page.content
             .columns.is-marginless
-                section.column.is-12.is-flex.is-flex-direction-column.is-justify-content-center
+                section.about-date.column.is-12.is-flex.is-flex-direction-column.is-justify-content-center.content.is-small
                     p.has-text-right!= `${__('created_by')}: ${full_date(page.date)}`
-                    p.has-text-right!= `${__('last_revised_by')}: ${full_date(page.updated)}`
+                    p.has-text-right.mb-2!= `${__('last_revised_by')}: ${full_date(page.updated)}`
 
 block append script
     script.
