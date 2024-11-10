@@ -1,5 +1,6 @@
 @use "./default-dark";
 @use "./default-light";
+@use "./variable";
 
 :root.appearance-light {
   @include default-light.light;
@@ -18,9 +19,9 @@
 }
 
 :root {
-  --backdropFilter: 20px;
-  --borderRadius: 6px;
-  --activeColor: #3273dc;
+  --backdropFilter: variable.$backdropFilter;
+  --borderRadius: variable.$borderRadius;
+  --activeColor: variable.$activeColor;
   --boxShadow: 0 6px 30px -10px rgba(0, 0, 0, .1);
 
   &.appearance-dark,

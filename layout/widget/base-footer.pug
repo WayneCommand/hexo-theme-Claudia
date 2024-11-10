@@ -1,0 +1,19 @@
+footer.is-flex.is-flex-direction-column.is-align-items-center.is-flex-shrink-0.is-family-serif
+    section.sns-container
+        include widget-sns
+    p.copyright(style='font-weight: bolder')
+        span Copyright ©
+        - var author = (theme.user && theme.user.name) || config.author || ''
+        span= ' ' + author + ' ' + new Date().getFullYear()
+    div.is-flex.is-justify-content-center.is-flex-wrap-wrap.copyright.mt-5
+        p Powered by&nbsp;
+            a(title="Hexo blog framework" href="//hexo.io") Hexo
+        p &verbar;&nbsp;
+        p.is-flex.is-justify-content-center
+            a(title="Hexo theme author" href='//github.com/WayneCommand') Theme by WayneCommand&verbar;&nbsp;
+        p.is-flex.is-justify-content-center
+            a(title="Forked by" href='//github.com/haojen') Forked by Haojen&nbsp;
+        div
+            a(title="github-button" class="github-button" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true")
+    div.foot-notes
+        span!= theme.user && theme.user.footnotes

@@ -5,20 +5,21 @@ menu:
   # Archive: /archives
 
 widgets:
-  - tag
-  - archive
   - recent_posts
   - category
   - profile
+  # - tag
+  # - archive
+  # - friend_links
 
 # social config
 social:
-  zhihu:
+  zhihu: /
   twitter: /
   facebook: /
-  linkedin:
+  linkedin: /
   instagram: /
-  github:
+  github: /
 
 user:
   name:
