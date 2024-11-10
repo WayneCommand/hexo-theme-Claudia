@@ -71,6 +71,9 @@ ga_domain:
 # Baidu Analytics
 ba_track_id:
 
+# Matomo Analytics
+matomo_tracker_domain:
+
 # picture of about page
 about_pic: /images/about.png
 
